@@ -1,0 +1,56 @@
+
+
+  <ul>
+  <li *ngFor="let item of items | async ">
+      <h4>
+        <span >{{item.title}}</span>
+
+      </h4>
+
+      <div>
+        <h4>
+          <span >{{item.amount}}</span>
+        </h4>
+    </div>
+
+    </li>
+
+     <!--
+  <div *ngIf="(products$ | async); let products">
+  <div class="table-responsive" *ngIf="products.length; else elseBlock">
+    <app-favorite-product-list-item
+      [product]="products"
+    ></app-favorite-product-list-item>
+  </div>
+  <ng-template #elseBlock>
+    <div class="p-5">You have'nt favorited anything yet.</div>
+  </ng-template>
+</div>
+      
+      
+      <div>
+          <h4>
+            <span >{{item.title}}</span>
+          </h4>
+      </div>
+      <div>
+        <h4>
+          <span >{{item.amount}}</span>
+        </h4>
+      </div>
+      <div>
+        <h4>
+          <span >{{item.note}}</span>
+        </h4>
+      </div>
+      <div>
+        <h4>
+          <span >{{item.date}}</span>
+        </h4>
+      </div>
+  
+    --> 
+  </ul>
+  
+
+    
