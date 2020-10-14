@@ -1,11 +1,10 @@
-
 <table>
   <thead>
      
   </thead>
   <tbody>
       <tr *ngFor="let item of items | async ">
-          <td>  
+          <td>  <i class='fas fa-pen' style='font-size:24px'></i>
             <button type="button" >Edit</button>
           </td>
           <div class="list-item"> 
@@ -15,7 +14,7 @@
             </tr> 
             
             <tr>
-                <td>Note: {{ item.note }}</td>
+                <td>NOTE: {{ item.note }}</td>
             </tr>
             
             
