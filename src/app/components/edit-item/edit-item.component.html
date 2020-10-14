@@ -1,21 +1,60 @@
 
+<table>
+  <thead>
+     
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of items | async ">
+          <td>  
+            <button type="button" >Edit</button>
+          </td>
+          <div class="list-item"> 
+            <tr><td>{{ item.date | date:' dd . MMM . yyyy '}}</td></tr> 
+            <tr><td class="list-item-title">{{ item.title }}</td>
+                <td class="list-item-amount">{{ item.amount }}</td>
+            </tr> 
+            
+            <tr>
+                <td>Note: {{ item.note }}</td>
+            </tr>
+            
+            
+           </div> 
 
-  <ul>
-  <li *ngFor="let item of items | async ">
-      <h4>
-        <span >{{item.title}}</span>
+          <td>
+              <button type="button" >Remove</button>
+          </td>
+      </tr>
+  </tbody>
+</table>
 
-      </h4>
 
-      <div>
-        <h4>
-          <span >{{item.amount}}</span>
-        </h4>
-    </div>
-
-    </li>
 
      <!--
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Amount</th>
+                            <th>Note</th>
+                            <th>Action</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of items | async ">
+                            <th>{{ item.title }}</th>
+                            <td>{{ item.amount }}</td>
+                            <td>{{ item.note }}</td>
+                            <td>{{ item.date }}</td>
+                            <td>
+                                <button type="button" >Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
   <div *ngIf="(products$ | async); let products">
   <div class="table-responsive" *ngIf="products.length; else elseBlock">
     <app-favorite-product-list-item
@@ -50,7 +89,7 @@
       </div>
   
     --> 
-  </ul>
+  
   
 
     

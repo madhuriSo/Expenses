@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ItemService } from '../../services/item.service';
 import {Item} from '../../models/item.model';
-
+import { CommonModule } from '@angular/common';
+import { DatePipe } from '@angular/common';
 
 
 @Component({

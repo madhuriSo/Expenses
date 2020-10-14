@@ -1,0 +1,19 @@
+.list-item{
+    background-color: white;
+    color:grey;
+    padding: 15px 15px;
+    font-size: small;
+}
+
+.list-item-title{
+    background-color: white;
+    color: rgb(102, 15, 102);
+    font-size: x-large;
+}
+.list-item-amount{
+    background-color: white;
+    color: black;
+    font-size: x-large;
+    
+    text-align: right;
+}
