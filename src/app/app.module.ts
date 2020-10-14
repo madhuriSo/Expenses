@@ -6,6 +6,7 @@ import { CommonModule } from "@angular/common";
 
 import { AppComponent } from './app.component';
 import { EditItemComponent } from './components/edit-item/edit-item.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -18,7 +19,8 @@ import { EditItemComponent } from './components/edit-item/edit-item.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
 
 
   ],

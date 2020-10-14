@@ -8,6 +8,6 @@ import { EditItemComponent } from './components/edit-item/edit-item.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Expenses';
+  title = 'EXPENSES';
   amount='xyz';
 }
