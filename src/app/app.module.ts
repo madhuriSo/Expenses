@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 
 import { CommonModule } from "@angular/common";
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EditItemComponent } from './components/edit-item/edit-item.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 
@@ -20,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     HttpClientModule,
     CommonModule,
-    FontAwesomeModule
+    FormsModule
+
 
 
   ],

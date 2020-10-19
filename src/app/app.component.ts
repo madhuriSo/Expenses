@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { EditItemComponent } from './components/edit-item/edit-item.component';
+import {Item} from './models/item.model';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,11 @@ import { EditItemComponent } from './components/edit-item/edit-item.component';
 export class AppComponent {
   title = 'EXPENSES';
   amount='xyz';
+  item=new Item();
+
+  addExpense(){
+    console.log("Add this expense");
+  }
 }
+
+
