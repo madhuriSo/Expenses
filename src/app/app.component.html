@@ -1,4 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+
 <div >
 <div class="class">
   <h1 class="fontcolor"> 
@@ -13,12 +15,14 @@
 </div>
 <div  class="class" > 
   <div > 
-<input class="textBox" type="text" name="Title" placeholder="Title"><br><br>
+<input class="form-control" id="title" class="textBox"  
+[(ngModel)]="item.title" type="text" name="Title" placeholder="Title"><br><br>
 <input class="textBox" type = "text" name="Amount" placeholder="Amount"><br><br>
 <input class="textBox" type ="text" name= "Note" placeholder="Note"><br><br>
 <input class="textBox" type ="text" name="Date" placeholder="Date"><br><br>
-<input  class="buttonRound" type ="button" name = "Add Expense" value="ADD EXPENSE" >
+<input  class="buttonRound" type ="button" (click)= "addExpense()" name = "Add Expense" value="ADD EXPENSE" >
 </div>
+<p> {{ item.title}}!</p>
 <div>
   
   
