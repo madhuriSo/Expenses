@@ -6,7 +6,6 @@
   <h1 class="fontcolor"> 
     MY {{ title }}
   </h1>
-  
 
 <div>
 <h4>Total</h4>
@@ -17,12 +16,13 @@
   <div > 
 <input class="form-control" id="title" class="textBox"  
 [(ngModel)]="item.title" type="text" name="Title" placeholder="Title"><br><br>
-<input class="textBox" type = "text" name="Amount" placeholder="Amount"><br><br>
-<input class="textBox" type ="text" name= "Note" placeholder="Note"><br><br>
-<input class="textBox" type ="text" name="Date" placeholder="Date"><br><br>
-<input  class="buttonRound" type ="button" (click)= "addExpense()" name = "Add Expense" value="ADD EXPENSE" >
+<input class="textBox" [(ngModel)]="item.amount" type = "text" name="Amount" placeholder="Amount"><br><br>
+<input class="textBox" [(ngModel)]="item.note" type ="text" name= "Note" placeholder="Note"><br><br>
+<input class="textBox" [(ngModel)]="item.date" type ="text" name="Date" placeholder="Date"><br><br>
+<input class="buttonRound" type ="button" (click)= "addExpense()" name = "Add Expense" value="ADD EXPENSE" >
+
 </div>
-<p> {{ item.title}}!</p>
+<p> {{ item.title}}</p>
 <div>
   
   
