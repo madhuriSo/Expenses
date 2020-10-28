@@ -14,7 +14,7 @@ export class AppComponent {
   item=new Item();
 
   addExpense(){
-    console.log("Add this expense");
+    console.log("Add this expense "+this.item.title+" Amount: "+this.item.amount);
   }
 }
 
